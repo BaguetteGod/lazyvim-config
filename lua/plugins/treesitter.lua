@@ -1,19 +1,27 @@
 return {
   "nvim-treesitter/nvim-treesitter",
   dependencies = {
-    { "windwp/nvim-ts-autotag" },
+    { "windwp/nvim-ts-autotag", "HiPhish/nvim-ts-rainbow2" },
   },
-  opts = {
-    highlights = { enable = true },
-    autopairs = { enable = true },
-    autotag = {
+  opts = function(_, opts)
+    opts.rainbow = {
+      enable = true,
+      query = {
+        "rainbow-parens",
+        html = "rainbow-tags",
+        vue = "rainbow-tags",
+      },
+      strategy = require("ts-rainbow").strategy.global,
+    }
+    opts.autopairs = { enable = true }
+    opts.autotag = {
       enable = true,
       enable_rename = true,
       enable_close = true,
       enable_close_on_slash = true,
-    },
-    indent = { enable = true },
-  },
+    }
+    opts.indent = { enable = true }
+  end,
   ensure_installed = {
     "html",
     "javascript",
