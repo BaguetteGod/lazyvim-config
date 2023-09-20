@@ -15,6 +15,7 @@ return {
       "intelephense",
       "nginx-language-server",
       "php-debug-adapter",
+      "php-cs-fixer",
       "phpstan",
       "pint",
       "tailwindcss-language-server",
