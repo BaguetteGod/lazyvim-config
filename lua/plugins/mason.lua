@@ -19,6 +19,7 @@ return {
       "phpstan",
       "pint",
       "tailwindcss-language-server",
+      "rustywind",
     },
   },
 }
