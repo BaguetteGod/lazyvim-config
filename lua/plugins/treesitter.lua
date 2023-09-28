@@ -20,23 +20,38 @@ return {
       enable_close = true,
       enable_close_on_slash = true,
     }
+    opts.highlight = { enable = true }
     opts.indent = { enable = true }
     opts.ensure_installed = {
       "html",
+      "bash",
+      "c",
       "javascript",
       "jsdoc",
       "json",
       "lua",
       "luadoc",
+      "luap",
       "php",
       "scss",
       "sql",
       "typescript",
       "yaml",
-      "luap",
       "markdown",
       "markdown_inline",
       "vue",
+      "css",
+      "query",
+      "regex",
+    }
+    opts.incremental_selection = {
+      enable = true,
+      keymaps = {
+        init_selection = "<C-space>",
+        node_incremental = "<C-space>",
+        scope_incremental = false,
+        node_decremental = "<bs>",
+      }
     }
   end,
 }
