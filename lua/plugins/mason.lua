@@ -20,6 +20,9 @@ return {
       "pint",
       "tailwindcss-language-server",
       "rustywind",
+      "proselint",
+      "write-good",
+      "alex",
     },
   },
 }

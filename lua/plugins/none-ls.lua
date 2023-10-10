@@ -13,6 +13,10 @@ return {
           nls.builtins.formatting.phpcsfixer,
           nls.builtins.formatting.blade_formatter,
           nls.builtins.formatting.prettierd,
+          nls.builtins.diagnostics.proselint,
+          nls.builtins.code_actions.proselint,
+          nls.builtins.diagnostics.alex,
+          nls.builtins.diagnostics.write_good,
           nls.builtins.diagnostics.phpstan.with({
             extra_args = {
               "--memory-limit=2G",
