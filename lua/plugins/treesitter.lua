@@ -1,7 +1,7 @@
 return {
   "nvim-treesitter/nvim-treesitter",
   dependencies = {
-    { "windwp/nvim-ts-autotag", "HiPhish/nvim-ts-rainbow2" },
+    { "HiPhish/nvim-ts-rainbow2" },
   },
   opts = function(_, opts)
     opts.rainbow = {
@@ -51,7 +51,7 @@ return {
         node_incremental = "<C-space>",
         scope_incremental = false,
         node_decremental = "<bs>",
-      }
+      },
     }
   end,
 }

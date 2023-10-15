@@ -17,7 +17,6 @@ return {
       "php-debug-adapter",
       "php-cs-fixer",
       "phpstan",
-      "pint",
       "tailwindcss-language-server",
       "rustywind",
       "proselint",
