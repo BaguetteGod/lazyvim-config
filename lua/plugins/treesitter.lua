@@ -1,17 +1,17 @@
 return {
   "nvim-treesitter/nvim-treesitter",
   dependencies = {
-    { "HiPhish/nvim-ts-rainbow2" },
+    { "hiphish/rainbow-delimiters.nvim" },
   },
   opts = function(_, opts)
     opts.rainbow = {
       enable = true,
       query = {
-        "rainbow-parens",
+        "rainbow-delimiters",
         html = "rainbow-tags",
         vue = "rainbow-tags",
       },
-      strategy = require("ts-rainbow").strategy.global,
+      strategy = require("rainbow-delimiters").strategy.global,
     }
     opts.autopairs = { enable = true }
     opts.autotag = {
