@@ -7,6 +7,7 @@ return {
         javascript = { { "prettierd", "prettier" } },
         php = { "php_cs_fixer" },
         markdown = { "markdownlint" },
+        blade = { "blade-formatter" },
         fish = { "fish_indent" },
       },
     },
