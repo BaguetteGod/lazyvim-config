@@ -18,7 +18,3 @@ brew install prettierd
 ```bash
 brew install ripgrep
 ```
-
-```bash
-brew install avencera/taps/rustywind
-```
