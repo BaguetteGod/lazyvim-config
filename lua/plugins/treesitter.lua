@@ -3,6 +3,7 @@ return {
   dependencies = {
     { "windwp/nvim-ts-autotag" },
     { "hiphish/rainbow-delimiters.nvim" },
+    { "vrischmann/tree-sitter-templ" },
   },
   opts = function(_, opts)
     opts.rainbow = {
@@ -20,6 +21,26 @@ return {
       enable_rename = true,
       enable_close = true,
       enable_close_on_slash = true,
+      filetypes = {
+        "html",
+        "javascript",
+        "typescript",
+        "javascriptreact",
+        "typescriptreact",
+        "svelte",
+        "vue",
+        "tsx",
+        "jsx",
+        "rescript",
+        "xml",
+        "php",
+        "markdown",
+        "astro",
+        "glimmer",
+        "handlebars",
+        "hbs",
+        "templ",
+      },
     }
     opts.highlight = { enable = true }
     opts.indent = { enable = true }
