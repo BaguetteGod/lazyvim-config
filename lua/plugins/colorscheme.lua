@@ -8,19 +8,23 @@ return {
     },
   },
 
+  -- Tokyonight config
+  -- {
+  --   "folke/tokyonight.nvim",
+  --   opts = {
+  --     transparent = true,
+  --     styles = {
+  --       sidebars = "transparent",
+  --       floats = "transparent",
+  --     },
+  --   },
+  -- },
+
   -- Configure LazyVim to load onedark
   {
     "LazyVim/LazyVim",
     opts = {
       colorscheme = "onedark",
-    },
-  },
-
-  -- Set notify background_colour
-  {
-    "rcarriga/nvim-notify",
-    opts = {
-      background_colour = "#000000",
     },
   },
 }

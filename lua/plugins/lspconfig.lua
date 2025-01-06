@@ -10,30 +10,24 @@ return {
           filetypes_include = { "templ" },
           -- to fully override the default_config, change the below
           -- filetypes = {}
-          init_options = {
-            templ = "html",
-          },
+          init_options = { userLanguages = { templ = "html" } },
         },
         html = {
           filetypes_include = {
             "templ",
           },
-          init_options = {
-            templ = "html",
-          },
+          init_options = { userLanguages = { templ = "html" } },
         },
         htmx = {
           filetypes_include = {
             "templ",
           },
-          init_options = {
-            templ = "html",
-          },
+          init_options = { userLanguages = { templ = "html" } },
         },
       },
       setup = {
         tailwindcss = function(_, opts)
-          local tw = require("lspconfig.server_configurations.tailwindcss")
+          local tw = require("lspconfig.configs.tailwindcss")
           opts.filetypes = opts.filetypes or {}
 
           -- Add default filetypes
@@ -50,7 +44,7 @@ return {
         end,
 
         html = function(_, opts)
-          local html = require("lspconfig.server_configurations.html")
+          local html = require("lspconfig.configs.html")
           opts.filetypes = opts.filetypes or {}
 
           -- Add default filetypes
@@ -67,7 +61,7 @@ return {
         end,
 
         htmx = function(_, opts)
-          local htmx = require("lspconfig.server_configurations.htmx")
+          local htmx = require("lspconfig.configs.htmx")
           opts.filetypes = opts.filetypes or {}
 
           -- Add default filetypes

@@ -3,3 +3,4 @@
 -- Add any additional options here
 
 vim.opt.mouse = ""
+vim.filetype.add({ extension = { templ = "templ" } })
