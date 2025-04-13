@@ -2,14 +2,8 @@ return {
   "williamboman/mason.nvim",
   opts = {
     ensure_installed = {
-      "actionlint",
-      "ansible-language-server",
-      "ansible-lint",
-      "antlers-language-server",
       "stylua",
       "shfmt",
-      "vue-language-server",
-      "blade-formatter",
       "docker-compose-language-service",
       "dockerfile-language-server",
       "intelephense",
@@ -18,7 +12,6 @@ return {
       "php-cs-fixer",
       "phpstan",
       "tailwindcss-language-server",
-      "rustywind",
       "proselint",
       "write-good",
       "alex",

@@ -11,7 +11,7 @@ return {
           { git_blame.get_current_blame_text, cond = git_blame.is_blame_text_available },
         },
       },
-      extensions = { "neo-tree", "lazy" },
+      extensions = { "lazy" },
     }
   end,
 }

@@ -10,6 +10,7 @@ return {
       enable = true,
       query = {
         "rainbow-delimiters",
+        [""] = "rainbow-delimiters",
         html = "rainbow-tags",
         vue = "rainbow-tags",
       },

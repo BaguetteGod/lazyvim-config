@@ -22,6 +22,12 @@ return {
     },
     opts = function(_, opts)
       -- original LazyVim kind icon formatter
+      opts.window = {
+        documentation = {
+          border = "none",
+          winhighlight = "Normal:CmpDocumentation",
+        },
+      }
       local format_kinds = opts.formatting.format
       opts.formatting.format = function(entry, item)
         format_kinds(entry, item) -- add icons
