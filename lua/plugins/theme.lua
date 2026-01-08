@@ -1,0 +1,1 @@
+/home/baguettegod/.config/omarchy/current/theme/neovim.lua
